@@ -50,6 +50,7 @@ public class PhanSo {
                 mau = -mau;
                 this.tu = -this.tu;
             }
+
             this.mau = mau;
         }
     }
