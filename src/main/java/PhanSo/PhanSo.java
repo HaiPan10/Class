@@ -56,10 +56,10 @@ public class PhanSo {
 
     public void hienThi() {
         if (this.tu == 0) {
-            System.out.print("0");
+            System.out.println("0");
         }
         else if(this.mau == 1){
-            System.out.print(this.tu);
+            System.out.println(this.tu);
         }
         else {
             System.out.printf("%d/%d", this.tu, this.mau);
