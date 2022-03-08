@@ -29,14 +29,15 @@ public class Example {
                     p1 = newPhanSo();
                     p2 = newPhanSo();
                 }
-                case 2 -> p1.cong(p2).hienThi();
-                case 3 -> p1.tru(p2).hienThi();
-                case 4 -> p1.nhan(p2).hienThi();
-                case 5 -> p1.chia(p2).hienThi();
+                case 2 -> p1.cong(p2).rutGon().hienThi();
+                case 3 -> p1.tru(p2).rutGon().hienThi();
+                case 4 -> p1.nhan(p2).rutGon().hienThi();
+                case 5 -> p1.chia(p2).rutGon().hienThi();
                 default -> System.out.println("Ban chon thoat.");
             }
             System.out.print("Nhan enter de tiep tuc.\n");
-            sc.next();
+            sc.nextLine();
+            sc.nextLine();
         }while(choose >= 1 && choose <= 5);
     }
 

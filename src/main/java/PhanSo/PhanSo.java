@@ -62,7 +62,7 @@ public class PhanSo {
             System.out.println(this.tu);
         }
         else {
-            System.out.printf("%d/%d", this.tu, this.mau);
+            System.out.printf("%d/%d\n", this.tu, this.mau);
         }
     }
 
