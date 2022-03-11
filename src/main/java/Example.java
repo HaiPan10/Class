@@ -1,4 +1,5 @@
-import Class.*;
+import HinhHoc.*;
+import SoHoc.*;
 import java.util.Scanner;
 
 public class Example {
@@ -41,7 +42,7 @@ public class Example {
         System.out.println(d1.khoangCach(d2));
     }
 
-    public static void menu(){
+    public static void menu() throws Exception {
         Scanner sc = new Scanner(System.in);
         int choose;
         PhanSo p1 = new PhanSo(), p2 = new PhanSo();
@@ -76,7 +77,7 @@ public class Example {
         }while(choose >= 1 && choose <= 5);
     }
 
-    public static PhanSo newPhanSo(){
+    public static PhanSo newPhanSo() throws Exception {
         int tu, mau;
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap vao tu so: ");
