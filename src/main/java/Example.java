@@ -1,9 +1,44 @@
-import PhanSo.PhanSo;
+import Class.*;
 import java.util.Scanner;
 
 public class Example {
-    public static void main(String[] args){
-        menu();
+    public static void main(String[] args) throws Exception {
+        //menu();
+        //menu2();
+        //menu3();
+        menu4();
+    }
+
+    public static void menu4() throws Exception {
+        HinhChuNhat hcn = new HinhChuNhat(createDiem(1,4), createDiem(6,1));
+        hcn.hienThi();
+    }
+
+    public static void menu3(){
+        DoanThang dt1 = new DoanThang(createDiem(5,3), createDiem(2,3));
+        DoanThang dt2 = new DoanThang(createDiem(3,1), createDiem(3,5));
+        dt1.hienThi();
+        dt2.hienThi();
+        System.out.println(dt1.doDai());
+        System.out.println(dt2.doDai());
+        dt1.trungDiem().hienThi();
+        dt2.trungDiem().hienThi();
+        if(dt1.isSongSong(dt2))
+            System.out.println("2 đoạn thẳng song song");
+        else
+            System.out.println("2 đoạn thẳng không song song");
+    }
+
+    public static Diem createDiem(double x, double y){
+        return new Diem(x,y);
+    }
+
+    public static void menu2(){
+        Diem d1 = new Diem(5,4);
+        Diem d2 = new Diem(3,4);
+        d1.hienThi();
+        d2.hienThi();
+        System.out.println(d1.khoangCach(d2));
     }
 
     public static void menu(){
@@ -16,7 +51,7 @@ public class Example {
             p1.hienThi();
             p2.hienThi();
             System.out.print("""
-                    1. Nhap hai phan so moi.
+                    1.Nhap hai phan so moi.
                     2.Cong hai phan so.
                     3.Tru hai phan so.
                     4.Nhan hai phan so.
